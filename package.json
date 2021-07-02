@@ -1,0 +1,15 @@
+{
+  "name": "tamrin-maktab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+     "compile-sass": "sass sass/main.scss css/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.1"
+  }
+}

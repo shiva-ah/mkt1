@@ -1,0 +1,9 @@
+@import "abstract/variable";
+@import "abstract/mixins";
+@import "layout/grid";
+@import "layout/header";
+
+body{
+    color:red;
+    background-color: lightblue;
+}

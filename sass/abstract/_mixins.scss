@@ -1,0 +1,36 @@
+@mixin clearfix {
+    &::after(){
+        clear: both;
+        content: "";
+        display: table;
+    }
+}
+
+@mixin  response-to($size) {
+    @if $size == lg{
+        @media screen and (max-width:1200px){
+            @content;   
+        }
+    } 
+    @else if $size == md{
+        @media screen and (max-width:992px){
+            @content;   
+        }
+    } 
+    @else if $size == sm{
+        @media screen and (max-width:768px){
+            @content;   
+        }
+    } 
+    @if $size== xsm{
+        @media screen and (max-width:576px) {
+            @content;
+        }
+    }
+    
+    
+      
+     
+     
+    
+}
