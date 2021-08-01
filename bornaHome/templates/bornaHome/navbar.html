@@ -1,0 +1,32 @@
+{% load static %}
+{% block navBar %}
+        <div class="navbarTeachers">
+            <div class="navbarTeachers__mobile">
+                 <img src="{% static 'home_page/svg/menu.svg' %}" class="icon" alt="منو"/> 
+                 منو
+            </div>
+            
+            <div class="navbarTeachers__desktop">
+                <div class="navbarTeachers__desktop--right">
+                    <a href="#">
+                        <img src="{% static 'home_page/svg/menu.svg' %}" class="icon" alt="صفحه اصلی"/>
+                        صفحه اصلی
+                    </a>
+                    <a href="#aboutUs">
+                        <img src="{% static 'home_page/svg/about us.svg' %}" class="icon" alt="درباره ما"/>
+                        درباره ما
+                    </a>
+                </div>
+                <div class="navbarTeachers__desktop--left">
+                    <a href="">
+                        <img src="{% static 'home_page/svg/enter.svg' %}" class="icon" alt="ورود"/>
+                         ورود  
+                    </a>
+                    <a href="">
+                        <img src="{% static 'home_page/svg/sign in.svg' %}" class="icon" alt="ایجاد حساب کاربرى"/>
+                        ایجاد حساب کاربرى
+                    </a>
+                </div>
+            </div>
+        </div>
+{% endblock %}

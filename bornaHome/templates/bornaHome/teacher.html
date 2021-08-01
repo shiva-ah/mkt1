@@ -1,0 +1,36 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="برنا نرم افزار مدیریت آموزشگاه آنلاین">
+        <meta name="keywords" content="برنا, آموزشگاه آنلاین , برنا داده پرداز زاگرس">
+        <link rel="stylesheet" href="{% static 'home_page/sass/main.css' %}"/>
+    </head>
+    <body>
+		{% include 'bornaHome/navbar.html' %}
+        <div class="teacher">
+            <img class="teacher__pic" src="{% static 'home_page/svg/teacher-icon.png' %}" />
+            <span>
+                <h1 class="teacher__name">{{teacherName}}</h1>
+                <h2 class="teacher__field">مدرس پیانو</h2>
+            </span>
+        </div>
+        {% for day in days_of_week %}
+        <table class="timeTable">
+            <tr class="timeTable__header">
+              <th class="timeTable__header--empty"></th>
+              <th class="timeTable__header--day">{{day}}</th>
+            </tr>
+           {# % for time in times % #}
+            <tr class="timeTable__body">
+                <td class="timeTable__body--time">8:30-9:30</td>
+                <td class="timeTable__body--studentName">نام و نام خانوادگی</td>
+              </tr>
+            {# % endfor % #}
+        </table>
+        {% endfor %}
+        
+    </body>
+</html>
